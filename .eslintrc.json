@@ -1,0 +1,119 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "it": false,
+        "describe": false,
+        "expect": false
+    },
+    "rules": {
+        "no-console": [
+            "warn"
+        ],
+        "no-unused-vars": [
+            "warn"
+        ],
+        "generator-star-spacing": [
+            "warn",
+            "after"
+        ],
+        "quote-props": [
+            "warn",
+            "as-needed"
+        ],
+        "no-lonely-if": [
+            "warn"
+        ],
+        "wrap-iife": [
+            "warn",
+            "inside", {
+                "functionPrototypeMethods": true
+            }
+        ],
+        "require-jsdoc": [
+            "warn", {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true,
+                    "ArrowFunctionExpression": true,
+                    "FunctionExpression": true
+                }
+            }
+        ],
+        "complexity": [
+            "warn",
+            10
+        ],
+        "max-params": [
+            "warn", {
+                "max": 3
+            }
+        ],
+        "max-lines": [
+            "warn", {
+                "max": 500,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ],
+        "max-lines-per-function": [
+            "warn", {
+                "max": 30,
+                "skipBlankLines": true,
+                "skipComments": true,
+                "IIFEs": true
+            }
+        ],
+        "max-len": [
+            "warn", {
+                "code": 80
+            }
+        ],
+        "max-nested-callbacks": [
+            "warn",
+            3
+        ],
+        "dot-location": [
+            "warn",
+            "property"
+        ],
+        "default-case": "warn",
+        "indent": [
+            "error",
+            4
+        ],
+        "yoda": [
+            "warn",
+            "never", {
+                "exceptRange": true
+            }
+        ],
+        "linebreak-style": [
+            "off",
+            "windows"
+        ],
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
